@@ -1,0 +1,6 @@
+$project2_wiki $mol_page
+	title \My wiki
+	body /
+		<= Text $mol_textarea
+			hint \Print text
+			value?next <=> text?next \
