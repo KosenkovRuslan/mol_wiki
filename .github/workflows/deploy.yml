@@ -14,10 +14,10 @@ jobs:
     - uses: hyoo-ru/mam_build@master2
       with:
         token: ${{ secrets.GH_PAT }}
-        package: wiki
+        package: project2/wiki
     
     - uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
       if: github.ref == 'refs/heads/main'
       with:
         repo-token: ${{ secrets.GH_PAT }}
-        site-directory: 'wiki/-'
+        site-directory: 'project2/wiki/-'
